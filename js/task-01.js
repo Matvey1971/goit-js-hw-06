@@ -1,18 +1,7 @@
-const generalItems = document.getElementById("categories");
+const containerElement = document.getElementById("categories");
 
-const liItem = generalItems.children;
-
-const numberItem = generalItems.children.length;
-console.log("Number of categories:", numberItem);
-
-
-// const itemAll = document.querySelectorAll('.item');
-// Array.prototype.forEach.call(itemAll, (element) => {
-//     const title = element.querySelector('h2').innerHTML;
-//     const itemsLength = element.querySelectorAll('li').length;
-//     console.log(`Category: ${title} \nElements: ${itemsLength}`);
-// });
-
+const amountLength = containerElement.children.length;
+console.log("Number of categories:", amountLength);
 
 const itemAll = Array.from(document.querySelector("#categories").children);
 for (let elem of itemAll) {
@@ -20,3 +9,4 @@ for (let elem of itemAll) {
     let quantityLi = elem.lastElementChild.children.length;
     console.log(`Category: ${subject} \nElements: ${quantityLi}`);
 };
+
