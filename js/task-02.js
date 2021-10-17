@@ -14,6 +14,5 @@ ingredients.forEach(option => {
   ingredientli.classList.add('item');
   listIngredients.append(ingredientli);
 });
-
 console.log(ingredients);
 console.log(listIngredients);
